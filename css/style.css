@@ -99,7 +99,7 @@ h4{
     outline: none;
     border-radius: 30px;
 }
-.newslatter form input:last-child{
+.newslatter form button{
     display: inline-block;
     padding: 10px 30px;
     border:none;
@@ -112,6 +112,12 @@ h4{
     top:6px;
     right:6px;
 
+    transition: transform .4s;
+
+}
+.newslatter form button:hover{
+
+    transform:scale(1.1);
 }
 .about{
     width:100%;
@@ -185,39 +191,33 @@ button:hover{
 
 }
 .box{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 400px;  
-
-    padding: 0px 30px;
-  position: relative;
-
-}
-.scroll-images {
-    width: 100%;
     display: flex;
-    justify-content: center;
     align-items: center;
-   overflow-x: auto;
-    overflow-y: hidden;    
+    justify-content: center;
+
+    
 
 }
-.scroll-images::-webkit-scrollbar {
-    width: 10px;
-    height: 15px;
-    background-color: rgb(157, 156, 157);
+.scroll-images{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    overflow-x:auto;
+    overflow-y: hidden;
+}
+  .scroll-images::-webkit-scrollbar{
+    background-color: #858585;border-radius: 8px;
+
   }
-  
-  .scroll-images::-webkit-scrollbar-thumb {
-    background-color: rgb(45, 5, 48);
+  .scroll-images::-webkit-scrollbar-thumb{
+    background-color: rgb(130, 32, 130);
+    border-radius: 15px;
   }
-  
-  
+
   
 .card{
     height:450px;
-    width: 335px;     
+        min-width:330px;
     padding:20px 35px;
     background: #191919;
     border-radius: 20px;
